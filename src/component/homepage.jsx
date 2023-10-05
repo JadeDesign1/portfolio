@@ -16,10 +16,10 @@ const Homepage = () => {
   }, [isInView])
 
   return (
-    <div className='bg-black w-full h-screen'>
-      <div id='main' className={`flex lg:w-2/3 bg-black/90 flex-col gap-4 pt-32 sm:pt-20 lg:pt-4 rounded-md lg:mx-auto lg:mt-16 mt-8 text-secondary-0 font-bold my-auto relative`}>
-      <img src={image} className='w-[100%] rounded mx-auto opacity-50 h-fit object-cover' alt="" />
-      <div className='absolute top-60 left-20 sm:left-28 md:left-40 xl:left-52 opacity-100 z-20'>
+    <div className='bg-black w-full h-screen pb-10'>
+      <div id='main' className={`flex lg:w-2/3 bg-black/90 flex-col gap-4 rounded-md lg:mx-auto text-secondary-0 font-bold my-auto relative`}>
+      <img src={image} className='w-[100%] rounded mx-auto opacity-60 h-screen object-cover' alt="" />
+      <div className='absolute top-80 lg:top-76 left-20 sm:left-28 md:left-40 xl:left-52 opacity-100 z-20'>
          <motion.div 
             ref={ref}
             variants={{hidden: {opacity: 0, x:-75}, visible: {opacity: 1, x:0}}}
