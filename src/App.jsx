@@ -10,7 +10,7 @@ import Contact from "./pages/Contact"
 function App() {
  
   return (
-    <div className={`scroll-smooth  ease-linear duration-500 transition font-san text-secondary-0 min-h-screen px-4 sm:px-0 w-screen flex flex-col`}>
+    <div className={`scroll-smooth bg-secondary-0 ease-linear duration-500 transition font-san text-secondary-0 min-h-screen  sm:px-0 w-screen flex flex-col`}>
       <Header />
       <Homepage />
       <About />

@@ -1,15 +1,31 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import background from '../assets/4.jpeg'
+import { motion, useAnimation, useInView } from 'framer-motion'
 
 const Projectitem = ({title, image , link}) => {
+    const ref = useRef(null)
+    const isinView = useInView(ref)
+    const control = useAnimation()
+    useEffect(() => {
+        if(!isinView){
+            control.start("visible")
+        }
+    },[isinView])
+
     return (
-      <div className=' relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl group hover:bg-gradient-to-r from-gray-200 to-[#63a780]'>
+      <motion.div 
+        ref={ref}
+        variants={{hidden: {opacity: 0, y: 75}, visible: {opacity: 1, y: 0}}}
+        animate={control}
+        initial={"hidden"}
+        transition={{duration: 0.5, delay: 0.5}}
+        className=' relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl group hover:bg-gradient-to-r from-gray-200 to-[#63a780]'>
           <img src={image} alt="" className=' rounded-xl group-hover:opacity-10' />
           <div className=' hidden group-hover:block absolute top-[50% left-[50%] translate-x-[-50%] translate-y-[-50%]  '>
               <h3 className=''>{title}</h3>
               <a href={link} className=' flex flex-row justify-center'>View</a>
           </div>
-      </div>
+      </motion.div>
     )
   }
 
