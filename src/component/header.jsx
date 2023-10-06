@@ -18,7 +18,7 @@ const Links = ({links, index}) => {
 
   return (
   <a href={link} className='flex flex-row gap-2 items-center'> 
-      <span onMouseEnter={() => handleTitle(links)} onMouseLeave={() => setTitle(null)} className='rounded-full shadow-lg bg-white text-primary-0 text-xl shadow-white  m-2 p-3 cursor-pointer hover:scale-110 ease-in duration-300'>{icon}</span>
+      <span onMouseEnter={() => handleTitle(links)} onMouseLeave={() => setTitle(null)} className='rounded-full shadow-lg bg-white text-primary-0 text-xl shadow-white  m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-300'>{icon}</span>
       {title && <p className='text-base font-semibold capitalize text-primary-0 border px-1 bg-white'>{name}</p>}
   </a>
   )
