@@ -19,7 +19,7 @@ const Homepage = () => {
     <div className='bg-black w-full h-screen pb-10'>
       <div id='home' className={`flex lg:w-2/3 bg-black/90 flex-col gap-4 rounded-md lg:mx-auto text-secondary-0 font-bold my-auto relative`}>
       <img src={image} className='w-[100%] rounded mx-auto opacity-60 h-screen object-cover' alt="" />
-      <div className='absolute top-80 lg:top-60 left-14 pr-10 sm:pr-0 sm:left-28 md:left-40 xl:left-40 opacity-100 z-20'>
+      <div className='absolute top-60 lg:top-60 left-14 pr-10 sm:pr-0 sm:left-28 md:left-40 xl:left-40 opacity-100 z-20'>
          <motion.div 
             ref={ref}
             variants={{hidden: {opacity: 0, x:-75}, visible: {opacity: 1, x:0}}}
