@@ -72,7 +72,7 @@ const Header = () => {
         initial={"hidden"}
         animate={control}
         transition={{delay:0.5, duration:0.8}}
-        className=' md:block hidden fixed left-1 top-48 z-10 '
+        className=' md:block hidden fixed left-3 top-48 z-10 '
       >
         <div className=' flex flex-col gap-2'>
         {navLink.map((sidelink, i) => 
