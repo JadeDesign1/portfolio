@@ -2,6 +2,7 @@ import { motion, useInView, useAnimation } from 'framer-motion'
 import { useEffect, useRef } from 'react'
 import image from '../assets/2.jpg'
 import { FaFacebook, FaTwitter, FaInstagram, FaGithub, FaLinkedinIn } from 'react-icons/fa'
+import femi from "../assets/OLUWAFEMI.pdf"
 
 
 const Homepage = () => {
@@ -46,7 +47,7 @@ const Homepage = () => {
             className='flex justify-center'
         >
 
-          <button className="px-4 py-3 mt-8 text-black bg-gradient-to-r from-primary-0 to-tertiary-0 focus:text-white duration-300 border focus:border border-black hover:border-white rounded-xl w-fit mx-auto">Download CV</button>
+          <a href={femi} target='blank' className="px-4 py-3 mt-8 text-black bg-gradient-to-r from-primary-0 to-tertiary-0 focus:text-white duration-300 border focus:border border-black hover:border-white rounded-xl w-fit mx-auto">Download CV</a>
         </motion.div>
       </div>
       
