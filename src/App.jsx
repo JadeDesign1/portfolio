@@ -1,16 +1,16 @@
-import Header from "./component/header"
-import Homepage from "./component/homepage"
-import About from "./pages/About"
-import Skills from "./pages/Skills"
-import Footer from "./component/footer"
-import Projects from "./pages/Projects"
-import Contact from "./pages/Contact"
-
+import Header from "./component/header";
+import Homepage from "./component/homepage";
+import Skills from "./pages/Skills";
+import Footer from "./component/footer";
+import Projects from "./pages/Projects";
+import Contact from "./pages/Contact";
+import About from "./component/About";
 
 function App() {
- 
   return (
-    <div className={`scroll-smooth bg-secondary-0 ease-linear duration-500 transition font-san text-secondary-0 min-h-screen  sm:px-0 w-screen flex flex-col`}>
+    <div
+      className={`scroll-smooth bg-secondary-0 ease-linear duration-500 transition font-san text-secondary-0 min-h-screen  sm:px-0 w-screen flex flex-col`}
+    >
       <Header />
       <Homepage />
       <About />
@@ -19,7 +19,7 @@ function App() {
       <Contact />
       <Footer />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
