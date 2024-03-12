@@ -1,23 +1,68 @@
+import { AiOutlineHome, AiOutlineMenu } from "react-icons/ai";
+import { MdOutlineLunchDining, MdOutlineLocalPhone } from "react-icons/md";
+import { SiAboutdotme } from "react-icons/si";
+import { GoProjectSymlink } from "react-icons/go";
+import { GiCancel } from "react-icons/gi";
+
+export const Resource = [
+  {
+    headlink: [
+      {
+        title: "Home",
+        icon: "fa fa-home",
+      },
+      {
+        title: "About",
+        icon: "fa fa-home",
+      },
+      {
+        title: "Skills",
+        icon: "fa fa-home",
+      },
+      {
+        title: "Experiece",
+        icon: "fa fa-home",
+      },
+      {
+        title: "Portfolio",
+        icon: "fa fa-home",
+      },
+      {
+        title: "Contact",
+        icon: "fa fa-home",
+      },
+    ],
+    socialMedia: [
+      "AiOutlineHome",
+      "SiAboutdotme",
+      "GoProjectSymlink",
+      "MdOutlineLunchDining",
+      "MdOutlineLocalPhone",
+    ],
+    skills: ["framer", "Html", "tailwind", "react", "git Control", "Js", "css"],
+  },
+];
+
 export const ProjData = [
   {
     title: "Trift",
-    img: "../public/thrift.png",
+    img: "/thrift.png",
     link: "https://thrift-git-main-josrph135.vercel.app/",
   },
   {
     title: "Anchormed",
-    img: "../public/anhored.png",
+    img: "/anhored.png",
     link: "https://anchormed.vercel.app/",
   },
   {
     title: "Safeguard",
-    img: "../public/safeguard.png",
+    img: "/safeguard.png",
     link: "https://safeguard-one.vercel.app/",
   },
 
   {
     title: "Laundry",
-    img: "../public/laundry.png",
+    img: "/laundry.png",
     link: "https://laundry-github-io.vercel.app/",
   },
 ];

@@ -1,15 +1,15 @@
-import Header from "./component/header";
-import Homepage from "./component/homepage";
-import Skills from "./pages/Skills";
+import Header from "./header";
+import Homepage from "./homepage";
 import Footer from "./component/footer";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
-import About from "./component/About";
+import About from "./About";
+import Skills from "./skill";
 
 function App() {
   return (
     <div
-      className={`scroll-smooth bg-secondary-0 ease-linear duration-500 transition font-san text-secondary-0 min-h-screen  sm:px-0 w-screen flex flex-col`}
+      className={`scroll-smooth bg-secondary-0 ease-linear duration-300 transition font-san text-secondary-0 min-h-screen  sm:px-0 w-screen flex flex-col`}
     >
       <Header />
       <Homepage />
@@ -17,7 +17,7 @@ function App() {
       <Skills />
       <Projects />
       <Contact />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

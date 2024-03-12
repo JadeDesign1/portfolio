@@ -1,3 +1,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer {
+  .navicon {
+    @apply cursor-pointer sm:hidden text-text3 text-xl font-semibold  block;
+  }
+  .head {
+    @apply px-2 py-2 sm:py-3 h-fit text-text1 bg-bg1 sm:px-4 duration-200 z-50 relative shadow-sm scroll-mt-12 w-screen shadow-text3;
+  }
+  .mobileNav {
+    @apply w-full justify-center flex items-center  text-text3 hover:bg-bg1/50 text-sm font-semibold p-4 cursor-pointer hover:pl-4 ease-in duration-200;
+  }
+  .desktopnav {
+    @apply rounded-full shadow-lg bg-bg1 text-text3 text-xl shadow-bg3  m-2 p-2 cursor-pointer hover:scale-110 ease-in duration-300;
+  }
+  .text {
+    @apply sm:pl-8 text-xs duration-200 text-justify text-stone-600;
+  }
+  .phead {
+    @apply duration-200 text-base lg:text-xl md:text-lg text-black font-semibold;
+  }
+}

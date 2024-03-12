@@ -1,63 +1,96 @@
-import { useEffect, useRef } from "react";
-import background from "../assets/4.jpeg";
-import { motion, useAnimation, useInView } from "framer-motion";
-import { ProjData } from "../data";
+import { FaArrowCircleRight } from "react-icons/fa";
+import rider from "../assets/rider.png";
+import thrift from "../assets/thrift.png";
+import anchormed from "../assets/anchormed.png";
+import portfolio from "../assets/portfolio.png";
+import laundry from "../assets/laundry.png";
+import safeguard from "../assets/safeguard.png";
 
-const Projectitem = ({ data }) => {
-  const { title, img, link } = data;
-  const ref = useRef(null);
-  const isinView = useInView(ref);
-  const control = useAnimation();
-  useEffect(() => {
-    if (!isinView) {
-      control.start("visible");
-    }
-  }, [isinView]);
-
-  return (
-    <motion.div
-      ref={ref}
-      variants={{
-        hidden: { opacity: 0, x: 75 },
-        visible: { opacity: 1, x: 0 },
-      }}
-      animate={control}
-      initial={"hidden"}
-      transition={{ duration: 0.5, delay: 0.5 }}
-      className=" relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl group hover:bg-gradient-to-r from-gray-200 to-[#63a780]"
-    >
-      <a
-        target="_blank"
-        href={link}
-        className=" flex flex-row justify-center relative"
-        rel="noreferrer"
-      >
-        <img src={img} alt="" className=" rounded-xl group-hover:opacity-10" />
-        <div className="hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]  ">
-          <h3 className="font-semibold text-2xl text-primary-0">{title}</h3>
-        </div>
-      </a>
-    </motion.div>
-  );
-};
-
+const project = [
+  {
+    title: "Rider App",
+    link: "https://delivery-client-server.vercel.app/",
+    img: rider,
+  },
+  {
+    title: "Thrift",
+    link: "https://thrift-git-main-josrph135.vercel.app/",
+    img: thrift,
+  },
+  {
+    title: "Anchormed Hospital",
+    link: "https://anchormed.vercel.app/",
+    img: anchormed,
+  },
+  {
+    title: "Safeguard pet",
+    link: "https://safeguard-one.vercel.app/",
+    img: safeguard,
+  },
+  {
+    title: "Portfolio",
+    link: "https://micheal-portfolio-dusky.vercel.app/",
+    img: portfolio,
+  },
+  {
+    title: "Laundry",
+    link: "https://laundry-github-io.vercel.app/",
+    img: laundry,
+  },
+];
 const Projects = () => {
   return (
-    <div id="projects" className="bg-secondary-0 w-full mx-auto pt-4">
-      <div id="projects" className=" max-w-[1040px] m-auto md:pl-20 p-4 py-16 ">
-        <h1 className=" lg:text-4xl text-lg font-semibold text-center text-black">
-          Projects
-        </h1>
-        <p className=" text-center py-8 text-lg font-normal text-stone-500 ">
-          Here are some of my projects
-        </p>
-        <div className=" grid sm:grid-cols-2 gap-12">
-          {ProjData.map((data, index) => (
-            <Projectitem key={index} data={data} />
-          ))}
-        </div>
-      </div>
-    </div>
+    <section
+      id="projects"
+      className="w-full scroll-mt-12 bg-bg2 px-4 md:px-10 py-8"
+    >
+      <h4 className="text-white font-semibold text-lg md:text-xl duration-200 pl-12 pb-2 md:pb-6 ">
+        Featured Work
+      </h4>
+      <section className="flex flex-col sm:pl-16 gap-4">
+        {project.map((proj, i) => {
+          return (
+            <article
+              className="bg-white  hover:scale-105 duration-150  flex sm:flex-row flex-col rounded-lg text-black"
+              key={i}
+            >
+              <div className="px-4 sm:px-10 sm:w-3/5 my-auto py-2 sm:py-4 md:py-8 duration-200">
+                <h4 className="font-semibold header text-sm pb-2">
+                  {proj.title}
+                </h4>
+                <div className="w-full sm:hidden">
+                  <img
+                    src={proj.img}
+                    className=" h-full w-full sm:rounded-r-lg "
+                    alt=""
+                  />
+                </div>
+                <p className="text w-full">{proj.desc}</p>
+                <div className="sm:pt-4 pt-2">
+                  <a
+                    target="blank"
+                    className="bg-black text-text4 text-[8px] sm:text-sm px-2 sm:px-4 duration-200 flex-row flex w-fit gap-2 items-center py-[5px] rounded"
+                    href={proj.link}
+                  >
+                    <span>View My Work</span>
+                    <span className="text-sm">
+                      <FaArrowCircleRight />
+                    </span>
+                  </a>
+                </div>
+              </div>
+              <div className="hidden sm:block sm:w-2/5">
+                <img
+                  src={proj.img}
+                  className=" h-full w-full sm:rounded-r-lg "
+                  alt=""
+                />
+              </div>
+            </article>
+          );
+        })}
+      </section>
+    </section>
   );
 };
 
