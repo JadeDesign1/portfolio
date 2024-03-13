@@ -16,18 +16,20 @@ const Homepage = () => {
   }, [isInView]);
 
   return (
-    <div className="bg-black w-screen h-screen pt-12">
+    <div
+      id="home"
+      className="bg-black w-screen h-screen sm:h-screen pt-12 relative"
+    >
       <div
-        id="home"
-        className={`flex lg:w-2/3 sm:h-screen flex-col scroll-mt-12 gap-4 rounded-md lg:mx-auto font-bold my-auto relative`}
+        className={` h-fit flex-col scroll-mt-12 gap-4 rounded-md lg:mx-auto font-bold my-auto `}
       >
         <img
           src={image}
-          className="w-full rounded mx-auto opacity-70 h-[100%] object-cover"
+          className="absolute top-32 duration-200 sm:w-4/5 w-[90%] md:w-3/5 rounded mx-auto opacity-70 h-3/5 object-contai sm:left-[10%] md:left-[20%]"
           alt=""
         />
         <section className="flex  justify-center items-center">
-          <article className="absolute top-[50%] sm:top-[25%] duration-200  opacity-100 z-20">
+          <article className="absolute top-[40%] sm:top-[35%] md:top-[35%] duration-200  opacity-100 z-20">
             <motion.div
               ref={ref}
               variants={{

@@ -42,7 +42,7 @@ const Header = () => {
 
       {/* mobile menu */}
       {openOverlay && (
-        <nav className=" absolute top-[51px] left-0 right-0 w-full h-fit bg-bg2 z-20 sm:hidden ">
+        <nav className=" absolute top-[42px] left-0 right-0 w-full h-fit bg-bg2 z-20 sm:hidden ">
           <section className="w-full flex flex-col gap-1 ">
             {navLink.map((link, index) => {
               return (

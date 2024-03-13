@@ -42,9 +42,9 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="w-full scroll-mt-12 bg-bg2 px-4 md:px-10 py-8"
+      className="w-full scroll-mt-8 bg-bg2 px-4 md:px-10 py-8"
     >
-      <h4 className="text-white font-semibold text-lg md:text-xl duration-200 pl-12 pb-2 md:pb-6 ">
+      <h4 className="text-center text-base phead font-semibold text-text3 text-[18px] sm:text-[24px] duration-200 pb-4 md:pb-6 ">
         Featured Work
       </h4>
       <section className="flex flex-col sm:pl-16 gap-4">
@@ -55,7 +55,7 @@ const Projects = () => {
               key={i}
             >
               <div className="px-4 sm:px-10 sm:w-3/5 my-auto py-2 sm:py-4 md:py-8 duration-200">
-                <h4 className="font-semibold header text-sm pb-2">
+                <h4 className="font-semibold header text-xs sm:text-sm pb-2">
                   {proj.title}
                 </h4>
                 <div className="w-full sm:hidden">
@@ -69,7 +69,7 @@ const Projects = () => {
                 <div className="sm:pt-4 pt-2">
                   <a
                     target="blank"
-                    className="bg-black text-text4 text-[8px] sm:text-sm px-2 sm:px-4 duration-200 flex-row flex w-fit gap-2 items-center py-[5px] rounded"
+                    className="bg-black text-text4 text-[10px] sm:text-sm px-2 sm:px-4 duration-200 flex-row flex w-fit gap-2 items-center py-[5px] rounded"
                     href={proj.link}
                   >
                     <span>View My Work</span>
