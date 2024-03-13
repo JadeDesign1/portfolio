@@ -2,7 +2,7 @@ import { AiOutlineHome, AiOutlineMenu } from "react-icons/ai";
 import { MdOutlineLocalPhone } from "react-icons/md";
 import { SiAboutdotme } from "react-icons/si";
 import { GoProjectSymlink } from "react-icons/go";
-import { GiCancel } from "react-icons/gi";
+import { GiCancel, GiSkills } from "react-icons/gi";
 import { useEffect, useRef, useState } from "react";
 import { motion, useAnimation, useInView } from "framer-motion";
 import Links from "./navlink";
@@ -10,7 +10,7 @@ import Links from "./navlink";
 const navLink = [
   { id: 1, name: "Home", link: "#home", icon: <AiOutlineHome /> },
   { id: 2, name: "About", link: "#about", icon: <SiAboutdotme /> },
-  { id: 3, name: "Skill", link: "#skill", icon: <SiAboutdotme /> },
+  { id: 3, name: "Skill", link: "#skill", icon: <GiSkills /> },
   { id: 4, name: "Projects", link: "#projects", icon: <GoProjectSymlink /> },
   { id: 5, name: "Contact", link: "#contact", icon: <MdOutlineLocalPhone /> },
 ];

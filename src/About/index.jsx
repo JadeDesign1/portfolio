@@ -3,10 +3,10 @@ import { Note } from "./about";
 
 const About = () => {
   return (
-    <div className="w-full sm:h-screen h-full bg-bg3 py-8">
+    <div className="w-full sm:min-h-fit bg-bg3 py-8">
       <div
         id="about"
-        className="flex scroll-mt-12 flex-col gap-4 mx-auto justify-center w-[90%] items-center "
+        className="flex scroll-mt-16 flex-col gap-4 mx-auto justify-center w-[90%] items-center "
       >
         <h2 className="phead font-semibold text-[18px] sm:text-[24px] ">
           About Me

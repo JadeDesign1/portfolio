@@ -16,11 +16,11 @@ const Svg = ({ percent }) => {
     }, 30);
 
     return () => clearInterval(interval);
-  }, [percent, counter]);
+  }, [counter, percent]);
 
   const circleStyle = {
     animation: `anim 2s linear forwards`,
-    strokeDashoffset: 428 - (428 * counter) / 100,
+    strokeDashoffset: 360 - (360 * counter) / 100,
   };
 
   return (
@@ -51,11 +51,11 @@ const Svg = ({ percent }) => {
           style={circleStyle}
           cx="80"
           cy="80"
-          r="70"
+          r="62"
           strokeLinecap="round"
           stroke="url(#GradientColor)"
-          strokeDasharray="428"
-          strokeWidth="20px"
+          strokeDasharray="360"
+          strokeWidth="22px"
           fill="none"
         />
       </svg>

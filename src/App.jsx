@@ -1,8 +1,8 @@
 import Header from "./header";
 import Homepage from "./homepage";
-import Footer from "./component/footer";
+import Footer from "./footer";
 import Projects from "./project";
-import Contact from "./pages/Contact";
+import Contact from "./contact";
 import About from "./About";
 import Skills from "./skill";
 

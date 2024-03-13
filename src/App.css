@@ -1,12 +1,13 @@
 .svg-circle {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: -8px;
+  right: 5px;
 }
 
 .outer-circle {
-  height: 160px;
-  width: 160px;
+  height: 140px;
+  width: 140px;
+  margin: 0 0 0 7px;
   border-radius: 50%;
   padding: 20px;
   background-color: white;
@@ -15,8 +16,8 @@
 }
 
 .inner-circle {
-  height: 120px;
-  width: 120px;
+  height: 100px;
+  width: 100px;
   border-radius: 50%;
   background-color: black;
   box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),

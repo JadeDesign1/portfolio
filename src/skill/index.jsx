@@ -8,7 +8,7 @@ const Skills = () => {
         <h2 className="phead font-semibold text-text3 text-[18px] sm:text-[24px]">
           My Skills
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 w-[90%] sm:w-[80%] sm:pl-4 mx-auto justify-center gap-2 md:gap-4">
+        <div className="grid mt-8 grid-cols-1 sm:grid-cols-2 w-[90%] sm:w-[80%] sm:pl-4 mx-auto justify-center gap-2 md:gap-4">
           {Ski.map((ski, i) => {
             return (
               <section
