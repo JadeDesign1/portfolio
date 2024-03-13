@@ -11,7 +11,7 @@ export default {
         text4: "#64c6f3",
         text1: "#7f9bb3",
         text2: "#a9bccc",
-        text3: "#d4dee6",
+        text3: "#f1f1f1",
         bg1: "#295880",
         bg2: "#547999",
         bg3: "#d4dee6",

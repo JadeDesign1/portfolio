@@ -51,7 +51,7 @@ const Projects = () => {
         {project.map((proj, i) => {
           return (
             <article
-              className="bg-white  hover:scale-105 duration-150  flex sm:flex-row flex-col rounded-lg text-black"
+              className="bg-white group hover:scale-105 duration-150  flex sm:flex-row flex-col rounded-lg text-black"
               key={i}
             >
               <div className="px-4 sm:px-10 sm:w-3/5 my-auto py-2 sm:py-4 md:py-8 duration-200">
@@ -73,7 +73,7 @@ const Projects = () => {
                     href={proj.link}
                   >
                     <span>View My Work</span>
-                    <span className="text-sm">
+                    <span className="text-sm group group-hover:text-yellow-400">
                       <FaArrowCircleRight />
                     </span>
                   </a>
