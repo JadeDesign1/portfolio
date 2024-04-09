@@ -18,11 +18,6 @@ const project = [
     img: thrift,
   },
   {
-    title: "Anchormed Hospital",
-    link: "https://anchormed.vercel.app/",
-    img: anchormed,
-  },
-  {
     title: "Safeguard pet",
     link: "https://safeguard-one.vercel.app/",
     img: safeguard,
