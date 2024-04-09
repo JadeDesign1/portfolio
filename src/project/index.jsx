@@ -32,11 +32,6 @@ const project = [
     link: "https://micheal-portfolio-dusky.vercel.app/",
     img: portfolio,
   },
-  {
-    title: "Laundry",
-    link: "https://laundry-github-io.vercel.app/",
-    img: laundry,
-  },
 ];
 const Projects = () => {
   return (
