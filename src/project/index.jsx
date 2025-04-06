@@ -1,21 +1,25 @@
 import { FaArrowCircleRight } from "react-icons/fa";
 import rider from "../assets/rider.png";
-import thrift from "../assets/thrift.png";
-import anchormed from "../assets/anchormed.png";
+
 import portfolio from "../assets/portfolio.png";
-import laundry from "../assets/laundry.png";
+
 import safeguard from "../assets/safeguard.png";
 
 const project = [
   {
+    title: "Product Store",
+    link: "https://productstore-mu.vercel.app/",
+    img: "/pstore.png",
+  },
+  {
+    title: "Joroservices",
+    link: "https://www.jososervices.org",
+    img: "/jservices1.png",
+  },
+  {
     title: "Rider App",
     link: "https://delivery-client-server.vercel.app/",
     img: rider,
-  },
-  {
-    title: "Thrift",
-    link: "https://thrift-git-main-josrph135.vercel.app/",
-    img: thrift,
   },
   {
     title: "Safeguard pet",
@@ -37,39 +41,33 @@ const Projects = () => {
       <h4 className="text-center text-base phead font-semibold text-text3 text-[18px] sm:text-[24px] duration-200 pb-4 md:pb-6 ">
         Featured Work
       </h4>
-      <section className="flex flex-col sm:pl-16 gap-4">
+      <section className="grid grid-cols-1 lg:grid-cols-2 sm:pl-16 gap-8 pr-8">
         {project.map((proj, i) => {
           return (
             <article
-              className="bg-white group hover:scale-105 duration-150  flex sm:flex-row flex-col rounded-lg text-black"
+              className="bg-white group hover:scale-105 duration-150 h-[40vh] flex sm:flex-row flex-col rounded-lg text-black"
               key={i}
             >
-              <div className="px-4 sm:px-10 sm:w-3/5 my-auto py-2 sm:py-4 md:py-8 duration-200">
-                <h4 className="font-semibold header text-xs sm:text-sm pb-2">
+              <div className="px-2 flex flex-row items-center sm:px-4 my-auto py-2 sm:py-4 md:py-8 lg:flex-col  duration-200">
+                <h4 className="font-semibold whitespace-nowrap header text-xs sm:text-sm pb-2">
                   {proj.title}
                 </h4>
-                <div className="w-full sm:hidden">
-                  <img
-                    src={proj.img}
-                    className=" h-full w-full sm:rounded-r-lg "
-                    alt=""
-                  />
-                </div>
+
                 <p className="text w-full">{proj.desc}</p>
                 <div className="sm:pt-4 pt-2">
                   <a
                     target="blank"
-                    className="bg-black text-text4 text-[10px] sm:text-sm px-2 sm:px-4 duration-200 flex-row flex w-fit gap-2 items-center py-[5px] rounded"
+                    className="bg-black text-text4 text-[10px] sm:text-sm px-2 sm:px-4 duration-200 flex-row flex w-fit gap-2 items-center py-[5px] rounded whitespace-nowrap"
                     href={proj.link}
                   >
-                    <span>View My Work</span>
+                    <span>Visit website</span>
                     <span className="text-sm group group-hover:text-yellow-400">
                       <FaArrowCircleRight />
                     </span>
                   </a>
                 </div>
               </div>
-              <div className="hidden sm:block sm:w-2/5">
+              <div className="w-full">
                 <img
                   src={proj.img}
                   className=" h-full w-full sm:rounded-r-lg "

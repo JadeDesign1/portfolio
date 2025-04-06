@@ -10,7 +10,7 @@ const SocialMedia = [
   { icon: <FaFacebook />, link: "" },
   { icon: <FaTwitter />, link: "https://twitter.com/Joseph30337661" },
   { icon: <FaInstagram />, link: "" },
-  { icon: <FaGithub />, link: "https://github.com/josrph135" },
+  { icon: <FaGithub />, link: "https://github.com/JadeDesign1" },
   {
     icon: <FaLinkedinIn />,
     link: "https://www.linkedin.com/in/joseph-oluwafemi-9778021a9/",

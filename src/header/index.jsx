@@ -29,9 +29,9 @@ const Header = () => {
   }, [isInView]);
 
   return (
-    <header className="head fixed">
+    <header className="head fixed pr-6">
       {/* menu icons */}
-      <section className="flex text-text3 font-semibold items-center flex-row justify-between">
+      <section className="flex text-text3  font-semibold items-center flex-row justify-between">
         <h1>Jade Design</h1>
         {openOverlay ? (
           <GiCancel onClick={showNav} className=" navicon sm:hidden" />
@@ -42,7 +42,7 @@ const Header = () => {
 
       {/* mobile menu */}
       {openOverlay && (
-        <nav className=" absolute top-[42px] left-0 right-0 w-full h-fit bg-bg2 z-20 sm:hidden ">
+        <nav className=" absolute top-[42px] left-0 right-0 w-full h-fit bg-bg1 z-20 sm:hidden ">
           <section className="w-full flex flex-col gap-1 ">
             {navLink.map((link, index) => {
               return (
@@ -50,7 +50,7 @@ const Header = () => {
                   onClick={showNav}
                   href={link.link}
                   key={index}
-                  className="mobileNav text-text3"
+                  className="mobileNav hover:bg-black/40 text-text3"
                 >
                   <span className="">{link.icon}</span>
                   <span className=" pl-2">{link.name}</span>
