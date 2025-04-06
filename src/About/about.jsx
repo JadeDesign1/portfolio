@@ -1,7 +1,7 @@
 export const Note = `
     Greetings! I'm Oluwafemi, a passionate full-stack developer on an
     exhilarating journey of continuous learning and innovation. My coding
-    adventure began a year ago. Driven by an insatiable curiosity for crafting
+    adventure began three years ago. Driven by an insatiable curiosity for crafting
     seamless digital experiences, I navigate the intricate realms of both
     front-end and back-end development. My journey into the world of code has
     been a self-propelled exploration, primarily fueled by platforms like
