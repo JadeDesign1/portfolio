@@ -9,7 +9,7 @@ const project = [
   
   {    title: "Cosavings",
     link: "https://cosavings.vercel.app/",
-    img: "/ajonest.png",},
+    img: "/ajonest.jpg",},
   {
     title: "Product Store",
     link: "https://productstore-mu.vercel.app/",
