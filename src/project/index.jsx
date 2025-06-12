@@ -13,7 +13,7 @@ const project = [
   },
   {
     title: "Joroservices",
-    link: "https://www.jososervices.org",
+    link: "https://www.joroservices.org",
     img: "/jservices1.png",
   },
   {
