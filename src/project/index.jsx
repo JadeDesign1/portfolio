@@ -6,6 +6,10 @@ import portfolio from "../assets/portfolio.png";
 import safeguard from "../assets/safeguard.png";
 
 const project = [
+  
+  {    title: "Cosavings",
+    link: "https://cosavings.vercel.app/",
+    img: "/ajonest.png",},
   {
     title: "Product Store",
     link: "https://productstore-mu.vercel.app/",
@@ -60,7 +64,7 @@ const Projects = () => {
                     className="bg-black text-text4 text-[10px] sm:text-sm px-2 sm:px-4 duration-200 flex-row flex w-fit gap-2 items-center py-[5px] rounded whitespace-nowrap"
                     href={proj.link}
                   >
-                    <span>Visit website</span>
+                    <span>Live Demo</span>
                     <span className="text-sm group group-hover:text-yellow-400">
                       <FaArrowCircleRight />
                     </span>
